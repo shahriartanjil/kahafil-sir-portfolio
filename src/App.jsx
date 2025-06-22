@@ -6,6 +6,8 @@ import Navbar from "./component/Navbar/navbar"
 import ExcellenceSection from "./component/ExcellenceSection/ExcellenceSection"
 import ClientsSection from "./component/ClientsSection/ClientsSection"
 import EducationSection from "./component/EducationSection/EducationSection"
+import ExperienceSection from "./component/ExperienceSection/ExperienceSection"
+import MarvelsSection from "./component/MarvelsSection/MarvelsSection"
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <ExcellenceSection/>
         <ClientsSection/>
         <EducationSection/>
+        <ExperienceSection/>
+        <MarvelsSection/>
       </div>
       
       
