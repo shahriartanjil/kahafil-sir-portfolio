@@ -1,8 +1,8 @@
 
-// import './App.css',
+import './App.css'
 
 import About from "./component/About/About"
-import Navbar from "./component/Navbar/navbar"
+import Navbar from "./component/Navbar/Navbar"
 import ExcellenceSection from "./component/ExcellenceSection/ExcellenceSection"
 import ClientsSection from "./component/ClientsSection/ClientsSection"
 import EducationSection from "./component/EducationSection/EducationSection"
