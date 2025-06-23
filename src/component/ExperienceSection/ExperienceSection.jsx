@@ -42,7 +42,7 @@ export default function ExperienceSection() {
   return (
     <section className="px-6 py-20 max-w-8xl mx-auto bg-white">
       {/* Heading */}
-      <section className="w-[1440px]">
+      <div className="px-30">
         <h2 className="text-2xl md:text-3xl font-bold mb-2 text-black">
         experience<span className="text-purple-600">.</span>
       </h2>
@@ -76,7 +76,7 @@ export default function ExperienceSection() {
           </div>
         </div>
       </div>
-      </section>
+      </div>
     </section>
   );
 }
