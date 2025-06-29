@@ -1,71 +1,108 @@
-import React from "react";
 
-export default function Navbar() {
+
+const Hero = () => {
+
     return (
-        <div className="min-h-screen bg-gray-100 text-black font-sans relative overflow-hidden">
-            {/* Nav */}
-            <nav className="flex justify-between items-center px-8 py-4 uppercase text-xs tracking-widest">
-                <div className="flex gap-44">
-                    <a href="#" className="hover:underline">Work</a>
-                    <a href="#" className="hover:underline">About</a>
-                    <a href="#" className="hover:underline">Thoughts</a>
-                </div>
-                <div className="flex gap-6">
-                    <a href="#" className="hover:underline">Mail</a>
-                    <a href="#" className="hover:underline">X</a>
-                    <a href="#" className="hover:underline">FB</a>
-                    <a href="#" className="hover:underline">LI</a>
-                </div>
-            </nav>
+        <section className="relative min-h-screen w-full bg-[#EFEAE4] text-gray-800 font-sans overflow-hidden">
 
-            {/* Hero Content */}
-            <div className="flex flex-col lg:flex-row items-center justify-between px-8 py-16 lg:py-32">
-                {/* Left Text */}
-                <div className="flex flex-col space-y-2">
-                    <h1 className="text-7xl lg:text-8xl font-bold">KAHAFIL</h1>
-                    <span className="text-lg font-semibold">2K25</span>
-
-                    <div className="mt-20 flex flex-col items-center gap-2">
-                        <span className="text-xs tracking-widest uppercase rotate-90 origin-left">/Portfolio</span>
-                        <span className="text-xs uppercase">Scroll Down</span>
-                        <span className="text-xl">↓</span>
+            {/* Top Navigation */}
+            <div className="absolute top-4 left-0 w-full z-40 flex items-center justify-between px-8 text-xs md:text-sm uppercase font-medium text-gray-900">
+                <div className="flex space-x-24 md:space-x-32 lg:space-x-40">
+                    <a href="#" className="hover:text-purple-600 transition-colors">WORK</a>
+                    <a href="#" className="hover:text-purple-600 transition-colors">ABOUT</a>
+                    <a href="#" className="hover:text-purple-600 transition-colors mr-16 md:mr-24 lg:mr-32">THOUGHTS</a>
+                </div>
+                <div className="flex ml-auto items-center">
+                    
+                    <a href="#" className="hover:text-purple-600 transition-colors">MAIL</a>
+                    <div className="flex space-x-4 ml-4">
+                        <a href="#" className="hover:text-purple-600 transition-colors">X</a>
+                        <a href="#" className="hover:text-purple-600 transition-colors">FB</a>
+                        <a href="#" className="hover:text-purple-600 transition-colors">LI</a>
                     </div>
-                </div>
-
-                {/* Center Image and IT Consultant Label */}
-                <div className="relative lg:mt-0 mt-[62px]  ">
-                    <img
-                        src="https://i.postimg.cc/5tyRM1Gv/Clipped-image-20250520-120412-2.png"
-                        alt="Kahafil"
-                        style={{
-                            filter: 'grayscale(0%)',
-                            transition: 'filter 0.3s ease',
-                            ':hover': {
-                                filter: 'grayscale(100%)'
-                            }
-                        }}
-                        className="w-[1038px] h-[700px] max-w-md object-cover rounded "
-                    />
-                    <div className="absolute left-0 top-1/2 transform -translate-x-full -translate-y-1/2">
-                        <div className="flex items-center gap-2">
-                            <span className="text-xs uppercase">IT Consultant</span>
-                            <span className="text-2xl">↷</span>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Right Biography */}
-                <div className="mt-12 lg:mt-0 max-w-md text-sm leading-relaxed">
-                    <h2 className="uppercase tracking-widest text-xs mb-2">Biography</h2>
-                    <p>
-                        A visionary leader with 22+ years of experience in innovation and growth.
-                        As MD of Goinnovior Limited and co-founder of Soul Soul, Lifeinnovior, and Codeinnovior,
-                        he blends tech, business, and social impact—delivering ICT and InfoSec solutions,
-                        promoting mental health, and enabling free tech education.
-                    </p>
-                    <div className="text-7xl lg:text-8xl font-bold mt-8">ORA</div>
                 </div>
             </div>
-        </div>
+
+            <div className="absolute top-[60px] left-1/2 transform -translate-x-1/2 h-[780px] w-[920px] z-10 ">
+                <img
+                        src="https://i.postimg.cc/5tyRM1Gv/Clipped-image-20250520-120412-2.png"
+                        
+                        alt="Kahafil"
+                        
+                        className="  w-full h-full object-cover   rounded saturate-0 hover:saturate-100"
+                    />
+            </div>
+
+
+            {/* ORA - now OUTSIDE the image container, at bottom right of full page */}
+            <p className="absolute bottom-0 right-4 text-[150px] font-bold leading-none tracking-normal uppercase text-gray-900 z-50 pb-4">
+                ORA
+            </p>
+
+            {/* KAHAFIL 2K25 + Portfolio */}
+            <div className="absolute top-[120px] left-8 z-30 text-left">
+                <h1 className="text-[8vw] md:text-[6vw] font-black uppercase leading-none tracking-tight text-gray-900">
+                    KAHAFIL
+                </h1>
+                <p className="text-[3vw] md:text-[2vw] font-semibold text-gray-700 tracking-wide">
+                    2K25
+                </p>
+                <div className="mt-8 border-l-2 border-purple-600 pl-4 py-2">
+                    <a href="#" className="text-lg font-medium text-gray-700 hover:text-purple-600 transition-colors">
+                        / PORTFOLIO
+                    </a>
+                </div>
+            </div>
+
+            {/* Biography */}
+            <div className="absolute top-[120px] right-8 z-30 text-right w-[280px] md:w-[350px]">
+                <p className="text-xs uppercase font-bold text-gray-600 mb-2">Biography</p>
+                <p className="text-sm leading-relaxed text-gray-800">
+                    A Visionary Leader With 22+ Years of Experience In Innovation And Growth. As MD Of Goinnovior Limited And Co-Founder Of 360D Soul, Lifeinnovior, And Codeinnovior, He Blends Tech, Business, And Social Impact—Delivering ICT And InfoSec Solutions, Promoting Mental Health, And Enabling Free Tech Education.
+                </p>
+            </div>
+
+            {/* IT CONSULTANT with Arrow */}
+            <div className="absolute top-[56%] left-[calc(50%-450px)] transform -translate-y-1/2 z-30 font-mono text-[13px] tracking-tight flex flex-col items-start">
+                <p className="mb-1 text-gray-600">IT CONSULTANT</p>
+                <span className="text-2xl">↷</span>
+                {/* <svg
+                    width="100"
+                    height="20"
+                    viewBox="0 0 100 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M5 10 L95 10"
+                        stroke="#000"
+                        strokeWidth="1.5"
+                        strokeDasharray="4,4"
+                        fill="none"
+                        markerEnd="url(#arrowhead)"
+                    />
+                    <defs>
+                        <marker
+                            id="arrowhead"
+                            markerWidth="6"
+                            markerHeight="6"
+                            refX="6"
+                            refY="3"
+                            orient="auto"
+                        >
+                            <polygon points="0 0, 6 3, 0 6" fill="#000" />
+                        </marker>
+                    </defs>
+                </svg> */}
+            </div>
+
+            {/* Scroll Down */}
+            <div className="absolute bottom-8 left-8 text-gray-600 z-30">
+                <p className="text-sm uppercase font-medium mb-1">Scroll Down</p>
+                <span className="text-xl">↓</span>
+            </div>
+        </section>
     );
-}
+};
+
+export default Hero;

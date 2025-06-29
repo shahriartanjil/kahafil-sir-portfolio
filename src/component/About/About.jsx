@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="px-6 py-20 max-w-full text-center text-gray-800 bg-white">
+    <section className="px-6 py-20 sm:text-center max-w-full text-center text-gray-800 bg-white">
       {/* Heading */}
       <h3 className="uppercase tracking-widest text-xs mb-4">About Kahafil Ora</h3>
       <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-12">
@@ -17,10 +17,10 @@ export default function About() {
       {/* Info Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
         {/* Left Info */}
-        <div className="text-left space-y-6 ml-20">
+        <div className="text-left space-y-6 lg:ml-20">
           <div className="">
             <h4 className="uppercase tracking-widest text-xs mb-2">Driving digital innovation across Bangladesh and beyond</h4>
-            <ul className="space-y-1">
+            <ul className="">
               <li>Mentor</li>
               <li>IT Strategist</li>
               <li>Tech Entrepreneur</li>
@@ -41,12 +41,12 @@ export default function About() {
           <img 
             src="https://i.postimg.cc/3Rg6t1Vb/Property-1-Group-2.png" 
             alt="Kahafil Ora" 
-            className="rounded-3xl object-cover"
+            className="rounded-3xl object-cover saturate-0 hover:saturate-100"
           />
         </div>
 
         {/* Right Stats */}
-        <div className="mr-20 md:text-right space-y-10">
+        <div className=" flex sm:flex-col flex-row sm:justify-center gap-6 text-center lg:mr-20 md:text-right space-y-6">
           <div>
             <h4 className="uppercase tracking-widest text-xs mb-2">Years of Experience</h4>
             <p className="text-4xl font-bold">22+</p>

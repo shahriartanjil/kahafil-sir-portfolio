@@ -25,7 +25,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="px-34 py-16 max-w-full items-center bg-gray-200 text-black">
+    <section className=" px-4 py-3 sm:px-6 lg:px-34 lg:py-16 max-w-full items-center bg-gray-200 text-black sm:grid-auto-columns: auto">
       {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-bold mb-6">
         creating excellence through collaboration and innovation.
@@ -36,7 +36,7 @@ export default function Services() {
       {/* Carousel */}
       <div className="relative">
         {/* Horizontal Scroll */}
-        <div className="flex overflow-x-auto no-scrollbar space-x-6 pb-4">
+        <div className="  sm:grid-cols-1 flex overflow-x-auto no-scrollbar space-x-6 pb-4 ">
           {services.map((service, index) => (
             <div
               key={index}

@@ -20,15 +20,15 @@ const posts = [
 
 export default function SolutionsSection() {
   return (
-    <section className="px-6 py-20 max-w-full mx-auto bg-white">
+    <section className="px-6 py-10 max-w-full mx-auto bg-white">
       {/* Heading */}
-      <div className="px-36">
+      <div className="sm:px-6">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-black">
         some solutions that i created<span className="text-purple-600">.</span>
       </h2>
 
       {/* Tabs */}
-      <div className="flex flex-wrap items-center gap-20 text-xs uppercase tracking-widest text-gray-500 mb-10">
+      <div className="flex flex-wrap sm:items-center lg:items-center sm:gap-4 lg:gap-20 text-xs uppercase  text-gray-500 mb-10">
         <span className="font-semibold text-black">Blogs & Articles</span>
         <span>/</span>
         <span className="hover:underline cursor-pointer">Public Speaking & Training</span>
@@ -39,7 +39,7 @@ export default function SolutionsSection() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-10">
         {posts.map((post, index) => (
           <div key={index} className="space-y-3 text-black">
             <img

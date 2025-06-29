@@ -13,7 +13,7 @@ export default function FooterSection() {
             </div>
 
             {/* Main footer grid */}
-            <div className="max-w-full text-center   grid grid-cols-2 md:grid-cols-4 gap-8 text-sm ">
+            <div className="max-w-full text-center  grid sm:grid-cols-1 md:grid-cols-4 gap-8 text-sm ">
                 {/* Contact */}
                 <div className="space-y-2">
                     <p>kahafil@goinnovior.com</p>

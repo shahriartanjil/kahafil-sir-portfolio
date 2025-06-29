@@ -21,16 +21,16 @@ const recognitions = [
 
 export default function MarvelsSection() {
   return (
-    <section className="px-26 py-20 max-w-full mx-auto bg-fuchsia-100">
+    <section className=" px-4 py-3 lg:px-26 lg:py-20   max-w-full mx-auto bg-fuchsia-100">
       <h2 className="text-2xl md:text-3xl font-bold mb-12 text-black">
         metric marvels<span className="text-purple-600">.</span>
       </h2>
 
       {/* Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+      <div className=" grid grid-cols-1 md:grid-cols-3  ">
         {/* Left Metric */}
-        <div className="flex flex-col items-start space-y-4">
-          <FaCrown className="text-3xl text-gray-700" />
+        <div className="flex flex-col  space-y-4 ">
+          <FaCrown className="text-3xl text-gray-700 sm:text-center" />
           <p className="uppercase text-xs tracking-widest text-gray-600">
             Awards & Recognition
           </p>
