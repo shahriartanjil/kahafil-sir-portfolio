@@ -23,7 +23,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="absolute top-[60px] left-1/2 transform -translate-x-1/2 h-[780px] w-[920px] z-10 ">
+            <div className="absolute top-[60px] left-1/2 transform -translate-x-1/2 sm:h-[371px] sm:w-[434px] lg:h-[780px] lg:w-[920px] z-10 ">
                 <img
                         src="https://i.postimg.cc/5tyRM1Gv/Clipped-image-20250520-120412-2.png"
                         
@@ -34,10 +34,18 @@ const Hero = () => {
             </div>
 
 
-            {/* ORA - now OUTSIDE the image container, at bottom right of full page */}
+            <div>
+                {/* ORA - now OUTSIDE the image container, at bottom right of full page */}
             <p className="absolute bottom-0 right-4 text-[150px] font-bold leading-none tracking-normal uppercase text-gray-900 z-50 pb-4">
                 ORA
             </p>
+            <div className="lg:hidden sm:top-96 lg:top-[120px] right-8 z-30 text-right w-[280px] md:w-[350px]">
+                <p className="text-xs  uppercase font-bold text-gray-600 mb-2">Biography</p>
+                <p className=" text-sm leading-relaxed text-gray-800 ">
+                    A Visionary Leader With 22+ Years of Experience In Innovation And Growth. As MD Of Goinnovior Limited And Co-Founder Of 360D Soul, Lifeinnovior, And Codeinnovior, He Blends Tech, Business, And Social Impact—Delivering ICT And InfoSec Solutions, Promoting Mental Health, And Enabling Free Tech Education.
+                </p>
+            </div>
+            </div>
 
             {/* KAHAFIL 2K25 + Portfolio */}
             <div className="absolute top-[120px] left-8 z-30 text-left">
@@ -55,9 +63,9 @@ const Hero = () => {
             </div>
 
             {/* Biography */}
-            <div className="absolute top-[120px] right-8 z-30 text-right w-[280px] md:w-[350px]">
-                <p className="text-xs uppercase font-bold text-gray-600 mb-2">Biography</p>
-                <p className="text-sm leading-relaxed text-gray-800">
+            <div className=" lg:absolute sm:top-96 lg:top-[120px] right-8 z-30 text-right w-[280px] md:w-[350px]">
+                <p className="  text-xs  uppercase font-bold text-gray-600 mb-2 ">Biography</p>
+                <p className="text-sm leading-relaxed text-gray-800  ">
                     A Visionary Leader With 22+ Years of Experience In Innovation And Growth. As MD Of Goinnovior Limited And Co-Founder Of 360D Soul, Lifeinnovior, And Codeinnovior, He Blends Tech, Business, And Social Impact—Delivering ICT And InfoSec Solutions, Promoting Mental Health, And Enabling Free Tech Education.
                 </p>
             </div>
