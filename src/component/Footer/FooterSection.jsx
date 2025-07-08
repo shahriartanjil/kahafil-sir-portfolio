@@ -5,15 +5,12 @@ export default function FooterSection() {
     return (
         <footer className="bg-white text-gray-700 pt-20 border-t">
             {/* Big name */}
-            <div >
-                <h1 className="w-full text-[15vw] md:text-[10vw] font-extrabold text-center leading-none mb-10">
-                    KAHAFIL ORA
-                </h1>
-
+            <div className="absulute mb-20 ml-50 ">
+                <img src="https://i.postimg.cc/dVv96tRT/Frame-1980.png" alt="" />
             </div>
 
             {/* Main footer grid */}
-            <div className="max-w-full text-center  grid sm:grid-cols-1 md:grid-cols-4 gap-8 text-sm ">
+            <div className="max-w-full text-center text-3xl  grid sm:grid-cols-1 md:grid-cols-4 gap-8  ">
                 {/* Contact */}
                 <div className="space-y-2">
                     <p>kahafil@goinnovior.com</p>
