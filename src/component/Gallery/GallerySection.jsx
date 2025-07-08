@@ -8,15 +8,15 @@ const galleryImages = [
   "https://i.postimg.cc/9fnds4s5/Component-32.png",
   "https://i.postimg.cc/43NPDRdt/Component-28.png",
   "https://i.postimg.cc/43NPDRdt/Component-28.png",
+    "https://i.postimg.cc/9fnds4s5/Component-32.png",
+  "https://i.postimg.cc/43NPDRdt/Component-28.png",
+  "https://i.postimg.cc/43NPDRdt/Component-28.png",
   
 ];
 
 export default function GallerySection() {
   return (
-    <section className="sm:px-6   ">
-      {/* <h2 className="text-2xl md:text-3xl font-bold mb-10">
-        Gallery<span className="text-purple-600">.</span>
-      </h2> */}
+    <section className="   ">
 
       {/* Single Line Flex Row */}
       <div className="flex ">
@@ -32,9 +32,19 @@ export default function GallerySection() {
             key={index}
             src={img}
             alt={`Gallery ${index + 1}`}
-            className=" md:h-60 object-cover   "
+            className=" md:h-60   w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
           />
+
+          {/* Instagram Icon Overlay */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+              alt="Instagram"
+              className="w-10 h-10"
+            />
+          </div>
           </a>
+
         ))}
       </div>
     </section>
