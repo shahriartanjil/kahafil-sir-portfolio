@@ -21,6 +21,21 @@ const services = [
     desc: "Designing Educational Platforms And Training Programs For Institutions That Want To Empower.",
     image: "https://i.postimg.cc/qv1C3d71/Mac-Book-Air-1-3.png",
   },
+  {
+    title: "IT Infrastructure & Cybersecurity",
+    desc: "Providing Expert Advice On Building Scalable, Secure Systems And Ensuring Robust Network Security.",
+    image: "https://i.postimg.cc/8z4Lm6ZB/Mac-Book-Air-1-1.png",
+  },
+  {
+    title: "Startup & Innovation Coaching",
+    desc: "Guiding Early-Stage Founders With Business Modeling, Product Market Fit, Branding, And More.",
+    image: "https://i.postimg.cc/PJ1wppLD/Mac-Book-Air-1-2.png",
+  },
+  {
+    title: "EdTech & Learning Program Design",
+    desc: "Designing Educational Platforms And Training Programs For Institutions That Want To Empower.",
+    image: "https://i.postimg.cc/qv1C3d71/Mac-Book-Air-1-3.png",
+  },
 ];
 
 export default function Services() {
