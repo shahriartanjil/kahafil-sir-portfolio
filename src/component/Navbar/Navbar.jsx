@@ -61,12 +61,12 @@ const Hero = () => {
                     <img
                         src="https://i.postimg.cc/5tyRM1Gv/Clipped-image-20250520-120412-2.png"
                         alt="Kahafil"
-                        className="lg:w-[865px] lg:h-[800px] object-cover rounded saturate-0 hover:saturate-100 transition-all duration-500"
+                        className="lg:w-[865px] lg:h-[800px] object-cover rounded saturate-0 hover:saturate-100  "
                     />
                 </div>
 
                 {/* ORA Text */}
-                <p className="absolute bottom-0 right-4 text-[80px] md:text-[120px] lg:text-[150px] font-bold leading-none tracking-normal  text-gray-900  pb-8">
+                <p className="absolute bottom-0  right-4 text-[80px] md:text-[120px] lg:text-[150px] font-bold leading-none tracking-normal  text-gray-900  pb-8">
                     ORA
                 </p>
 
