@@ -61,7 +61,7 @@ const Hero = () => {
                     <img
                         src="https://i.postimg.cc/5tyRM1Gv/Clipped-image-20250520-120412-2.png"
                         alt="Kahafil"
-                        className="lg:w-[865px] lg:h-[800px] object-cover rounded saturate-0 hover:saturate-100  "
+                        className=" object-cover rounded saturate-0 hover:saturate-100  "
                     />
                 </div>
 

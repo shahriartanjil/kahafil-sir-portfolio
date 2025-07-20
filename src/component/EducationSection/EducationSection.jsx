@@ -74,7 +74,7 @@ export default function EducationSection() {
         {items.map((item, index) => (
           <div 
             key={index} 
-            className="p-4 sm:p-5  rounded-lg  transition-all duration-300 "
+            className="p-4 sm:p-5 lg:ml-16 rounded-lg  transition-all duration-300 "
           >
             <p className="text-xs sm:text-sm text-gray-500 mb-1">{item.year}</p>
             <h3 className="text-sm sm:text-md font-medium mb-1 sm:mb-2">{item.title}</h3>
